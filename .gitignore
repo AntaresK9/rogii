@@ -1,0 +1,46 @@
+# --- datos / artefactos (nunca al repo) ---
+data/**
+!data/**/
+!data/**/.gitkeep
+models/*
+!models/.gitkeep
+submissions/*
+!submissions/.gitkeep
+reports/figures/*
+!reports/figures/.gitkeep
+*.csv
+*.parquet
+*.feather
+*.pkl
+*.joblib
+*.h5
+*.zip
+
+# --- credenciales ---
+.env
+kaggle.json
+
+# --- python ---
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+
+# --- jupyter ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+.virtual_documents/
+
+# --- optuna / logs ---
+*.db
+*.log
+lightning_logs/
+catboost_info/
+
+# --- editores / SO ---
+.vscode/
+.idea/
+.DS_Store
